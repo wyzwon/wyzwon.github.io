@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<title>Web Demonstrations</title>
+	<link rel="stylesheet" type="text/css" href="../assets/styleSheets/style.css"/>
+	
+	<link rel="apple-touch-icon-precomposed" sizes="217x217" href="../assets/SourceImages/logo217square.png" />
+		<link rel="icon" type="image/png" href="../assets/SourceImages/logo217square.png" sizes="217x217" />
+		<link rel="icon" type="image/png" href="../assets/SourceImages/logo217square.png" sizes="217x217" />
+	</head>
+	
+	<body>
+		<div id="container">
+			<div id="header" class="general">
+				<div id="logo">
+					<a href="../index.html"><img src="../assets/SourceImages/logo.png" alt="My logo aka A Picture of my First and last Initials Blended together" title="Click to return to Home Page" width="150" height="163"></a>
+				</div>
+				
+					
+				
+				<h1>The Portfolio of Thomas Bouffard</h1>
+				
+				<div id="menu" >
+					<div  class="general widgetMini" id="widget2mini" title="Games">
+						<a href="../Games/GamesDirectory.html"> 
+							<span class="ClickInterface"></span>
+						</a>
+					</div>
+					
+					<div  class="general widgetMini" id="widget3mini" title="Resume">
+						<a href="../Resume_Items/Resume_Items.html"> 
+							<span class="ClickInterface"></span>
+						</a>
+					</div>
+					
+					<div  class="general widgetMiniCurrentPage" id="widget5mini" title="Web">
+						<!--<a href="../Web/index.html"> 
+							<span class="ClickInterface"></span>
+						</a>-->
+					</div>
+					
+					<div  class="general widgetMini" id="widget1mini" title="3D">
+						<a href="../Modeling/Modeling.html"> 
+							<span class="ClickInterface"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+			<div id="content">
+				
+				
+				<div class="general"> <!-- Picture holder: Audio Visualizer -->
+					<div style="float: left;" class="ExhibitWidget"><!-- Picture -->
+						<a href="webAudio2.4/web-audio-visualizer.html"><img src="../assets/SourceImages/AudioVisualizerThumbnail.jpg" alt="A screenshot of my audio visualizer" title="click to view project"></a> <!--width="288" height="162"-->
+					</div>
+					
+					<div> <!-- Paragraph -->
+						<span class="pictureFontTitle">Audio Visualizer</span>
+						<br><span class="pictureFontBody"> An audio visualizer I created with a partner to demonstrate the use of an audio stream and connecting a canvas object with user controls.
+						 The default song was recorded for a separate class and cleaned in <a href="https://www.ableton.com/en/live/">Ableton Live</a> for a group project</span>
+					</div>
+				</div>
+				
+				<div class="general"> <!-- Picture holder: falling sand -->
+					<div style="float: left;">
+						<div class="ExhibitWidget" ><!-- Picture -->
+							<a href="https://particlesim.herokuapp.com"><img src="../assets/SourceImages/ParticleSimThumbnail.png" alt="Screen shot of the multiplayer sand simulator in action" title="Click to play"></a>
+						</div>
+					</div>
+					
+					<div> <!-- Paragraph -->
+						<span style="text-align: left" class="pictureFontTitle">Particle Simulation</span> 
+						<br><span class="pictureFontBody">This is a multiplayer sandbox particle simulator. Originally a class project to make something 
+						interesting in canvas, I choose to re-create the sand simulators that were popular back in the early to mid 2000s (of which most 
+						are gone or deprecated) in HTML5. I later took a class on real time interaction and have been using what I learned about Node.js and Socket.io 
+						to rebuild the first project as a real-time multiplayer experience.</span>
+						<span><br>Note: also listed under <a href="../Games/GamesDirectory.html"> Games</a>.</span>
+					</div>
+				</div>
+				
+				<div class="general"> <!-- Picture holder: ParticleSim -->
+					<div style="float: left;">
+						<div class="ExhibitWidget" ><!-- Picture -->
+							<a href="../Games/FallingSand/FallingSand.html"><img src="../assets/SourceImages/FallingSandThumbnail.png" alt="Screen shot of the sand simulator in action" title="Click to play" ></a>
+						</div>
+						<div>
+							<a href="https://github.com/wyzwon/FallingSand">Project Repository</a>
+						</div>
+					</div>
+					
+					<div> <!-- Paragraph -->
+						<span style="text-align: left" class="pictureFontTitle">Falling Sand</span> 
+						<br><span class="pictureFontBody">This is the results of the original project mentioned in Particle Simulation. 
+						It is single player only, but shows how fast the system can work if network speed isn't an issue.
+						The system works by extracting the ImageData from the current frame and iterating through the pixels.
+						Each sand type is identified by its color and its behavior is used to determine what the next frame will look like. When the frame is 
+						built, the image is pushed back to the canvas ImageData object.</span>
+						<span><br>Note: also listed under <a href="../Games/GamesDirectory.html"> Games</a>.</span>
+					</div>
+				</div>
+				
+				
+				
+				<footer id="footer" class="general">
+					<p>You can reach me at my email address: <a href="mailto:tjb5203@g.rit.edu">  tjb5203@g.rit.edu</a></p>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>

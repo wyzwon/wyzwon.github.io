@@ -1,0 +1,327 @@
+html, body, div, span, 
+ h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+img, ins, kbd, q, s, samp,
+small, strike, strong, 
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+ 
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*End CSS Reset*/
+
+
+
+body{
+	background-color:#84D484;
+	font-family: Helvetica, Calibri, serif;
+}
+
+h1{
+	color:#393939;/*color:#ffe0e0;*/
+	font-size: 2.5em;
+}
+
+h2{
+
+}
+	
+h3{
+
+}
+
+#header{
+}
+
+#menu{
+	float: left;
+}
+
+#portrait{
+	border-radius: 2em;
+	border: 0.3em solid #a0a0a0;
+	display: inline-block;
+	overflow: hidden;
+	margin-bottom: 0px;
+	padding: 0px;
+}
+
+#navigation{
+	float:bottom;
+	border: 5px solid #a0a0a0;
+	position:relative;
+	bottom:0;
+	display: inline-block;
+	vertical-align: middle;
+	background-color: #aaaaff;
+}
+
+#bio{
+	Background-color: #aaaaff;
+	font-size: 1.3em;
+	padding: 0.7em;
+}
+
+#bioFrame{
+	display: inline-block;
+	/*Background-color: #aaaaff;
+	font-size: 1.3em;*/
+	padding: 0.7em;
+}
+
+
+#logo{
+	padding: 0.25em;
+	float: left;
+	vertical-align: middle;
+}
+
+#footer{
+	/*float: left;
+	clear: none;
+	position: relative;
+	position:fixed;bottom:10px;*/
+	width: 100%;
+}
+
+#content{
+	position: absolute;
+	top: 15em;
+	width: 100%;
+}
+
+.general{
+	box-sizing: border-box;
+	background-color:#8f5fff;
+	color:#000000;
+	padding: 0.5em;
+	border: 0.3em solid #a0a0a0;
+	border-radius: 2em;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-family: Helvetica, Calibri, serif;
+}
+
+.pictureFontBody{
+	font-size: 150%;
+}
+
+.pictureFontTitle{
+	font-weight: bold;
+	font-size: 200%;
+}
+
+.widget{
+	min-height: 200px;
+	max-width: 200px;
+	background-repeat: no-repeat;
+	position: relative;
+	background: #aaaaff;
+	background-size: 100% 100%;
+}
+
+.widgetMiniCurrentPage{
+	max-height: 4.125em;
+	min-height: 4.125em;
+	max-width: 4.125em;
+	min-width: 4.125em;
+	background-repeat: no-repeat;
+	position: relative;
+	background: #aaaaff;
+	background-size: 100% 100%;
+	border-radius: 1em;
+	border: 5px solid #dddd00;
+}
+
+.widgetMini{
+	max-height: 4.125em;
+	min-height: 4.125em;
+	max-width: 4.125em;
+	min-width: 4.125em;
+	background-repeat: no-repeat;
+	position: relative;
+	background: #aaaaff;
+	background-size: 100% 100%;
+	border-radius: 1em;
+}
+
+.widgetMini:hover{
+	max-height: 4.125em;
+	min-height: 4.125em;
+	max-width: 4.125em;
+	min-width: 4.125em;
+	background-repeat: no-repeat;
+	position: relative;
+	background: #aaaaff;
+	background-size: 100% 100%;
+	border-radius: 1em;
+	border: 5px solid #00bb55;
+}
+
+.ExhibitWidget{
+	position: relative;
+	border-radius: 2em;
+	border: 10px solid #8f5fff;
+	display: block;
+	overflow:auto;
+	background-repeat: no-repeat;
+	background: #ffffff;
+	background-size: 100% 100%;
+	overflow:hidden;
+	margin: 0 auto;
+	line-height: 0;
+}
+.ExhibitWidget:hover{
+	position: relative;
+	border-radius: 2em;
+	border: 10px solid #00bb55;
+	display:block;
+	overflow:auto;
+	background-repeat: no-repeat;
+	background: #ffffff;
+	background-size: 100% 100%;
+	overflow:hidden;
+}
+
+.ClickInterface{
+	position: absolute;
+	left: 0;
+    top: 0;
+	width: 100%;
+    height: 100%;
+	
+}
+
+.imageSizer{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.widgetText{
+	position: absolute;
+	text-align: center;
+    bottom: 0;
+	right: 0;
+	width: 100%;
+	
+	color: #404040;
+	font-weight: bold;
+	font-size: 1.5em;
+	font-family: 'Didact Gothic', Helvetica, Calibri, sans-serif;
+}
+
+.GenericTitle{
+	text-align: center;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+
+
+
+#mainCanvas {
+    background: #ffffffff; /*#ffffff7f*/
+	border: 0.4em solid #a0a0a0;
+	border-radius: 2em;
+	/*box-shadow: 4px 4px 8px rgba(0,0,0,0.5);*/
+    float: left;
+    /*left: 10px;*/
+	/*padding: 2em;*?
+    /*top: 10px;*/
+	z-index: 0;
+}
+
+
+#widget1{
+	background-image: url("../SourceImages/basicShapesSmall.png");
+}
+
+#widget1:hover {
+	background-image: url("../SourceImages/basicShapesColoredGlow.png");
+	border: 0.3em solid #00bb55;
+}
+
+
+#widget2{
+	background-image: url("../SourceImages/GameControlerGray.png");
+}
+
+#widget2:hover {
+	background-image: url("../SourceImages/GameControlerGlow.png");
+	border: 0.3em solid #00bb55;
+}
+
+
+#widget3{
+	background-image: url("../SourceImages/Resume.png");
+}
+
+#widget3:hover {
+	background-image: url("../SourceImages/ResumeGlow.png");
+	border: 0.3em solid #00bb55;
+}
+
+#widget4{
+	background-image: url("../SourceImages/Recommendation.png");
+}
+
+#widget4:hover {
+	background-image: url("../SourceImages/RecommendationGlow.png");
+	border: 0.3em solid #00bb55;
+}
+
+#widget5{
+	background-image: url("../SourceImages/internetLogoGray.png");
+}
+
+#widget5:hover {
+	background-image: url("../SourceImages/internetLogoGlow.png");
+	border: 0.3em solid #00bb55;
+}
+
+
+#widget1mini{
+	background-image: url("../SourceImages/basicShapesColored.png");
+}
+
+#widget2mini{
+	background-image: url("../SourceImages/GameControler.png");
+}
+
+#widget3mini{
+	background-image: url("../SourceImages/Resume.png");
+}
+
+#widget4mini{
+	background-image: url("../SourceImages/internetLogo.png");
+}
+
+#widget5mini{
+	background-image: url("../SourceImages/internetLogo.png");
+}

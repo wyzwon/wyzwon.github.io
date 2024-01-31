@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" >
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+	
+	
+	<link rel="icon" href="../../assets/SourceImages/favicon.ico" type="image/x-icon"/>
+	<link rel="icon" href="../../assets/SourceImages/logo217long.png" type="image/png"/>
+	<link rel="shortcut icon" href="../../assets/SourceImages/favicon.ico" type="image/x-icon"/>
+	<link rel="apple-touch-icon" href="../../assets/SourceImages/favicon.ico">
+	
+	<style>
+	@-ms-viewport{
+	width: device-width;
+	}
+	
+	body{
+	font-family: 'Questrial', helvetica, sans serif;
+	background: #666666;
+	touch-action: pan-y;
+	padding:0px 0px 0px 0px;
+	margin: 0;
+	}
+	
+	canvas{
+	border:0px solid gray;
+	image-rendering: crisp-edges;
+	vertical-align: middle
+	}
+	
+	#controls{
+	border:10px solid #666666;
+	}
+	
+	#text{
+	}
+	
+	.switch {
+	position: relative;
+	display: inline-block;
+	width: 30px;
+	height: 17px;
+	}
+	
+	.switch input {display:none;}
+	
+	.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+	}
+	
+	.slider:before {
+	position: absolute;
+	content: "";
+	height: 13px;
+	width: 13px;
+	left: 2px;
+	bottom: 2px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+	}
+	
+	input:checked + .slider {
+	background-color: #2196F3;
+	}
+	
+	input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+	}
+	
+	input:checked + .slider:before {
+	-webkit-transform: translateX(13px);
+	-ms-transform: translateX(13px);
+	transform: translateX(13px);
+	}
+	
+	/* Rounded sliders */
+	.slider.round {
+	border-radius: 17px;
+	}
+	
+	.slider.round:before {
+	border-radius: 50%;
+	}
+	
+	</style>
+	<title>FallingSand</title>
+</head>
+
+<body>
+	<canvas id="canvas" style="touch-action: none;">
+		Error: The content could not be displayed because your browser does not support Canvas. Canvas is supported in the latest versions of all modern
+		web browsers such as:
+		<ul>
+			<li>Chrome</li>
+			<li>Firefox</li>
+			<li>Opera</li>
+			<li>Safari</li>
+			<li>Edge</li>
+			<li>Internet Explorer 9 and up</li>
+		</ul>
+	</canvas>
+	
+	
+	<div id="controls">
+		<label>Sand Types
+			<select id="sandType">
+				<option value="#231900">Crude Oil</option>
+				<option value="#8c7656">Dead Plant</option>
+				<option value="#faf700">Dying Seaweed</option>
+				<option value="#FFFFFF">Salt</option>
+				<option value="#AACCFF">Salt Water</option>
+				<option value="#EBEFA0" selected>Sand</option>
+				<option value="#00f800">Seaweed</option>
+				<option value="#888888">Stone</option>
+				<option value="#000000">Void (Eraser)</option>
+				<option value="#0000FF">Water</option>
+			</select>
+		</label>
+		<label for="PenSize"><br>Pen size (2-50)</label>
+		<input id="PenSize" type="range" min="2" max="50" step="2"/>
+		
+		<div>
+			<span><br>fill scene:<input id="clearButton" type="button" value="Clear"/></span>
+			<span><input id="lakeButton" type="button" value="Lake"/></span>
+			<span><input id="lakeBedButton" type="button" value="Lake Bed"/></span>
+		</div>
+		
+		<span><br>Run in background:</span>
+		<label class="switch">
+			<input id="backgroundRunSwitch" onchange="" type="checkbox">
+			<div class="slider round"></div>
+		</label>
+	</div>
+	
+	<!--<span><input id="logButton" type="button" value="log"/></span>-->
+	
+	<div id="text">
+		<span><br><br>Instructions: <br></span>
+		<div id="instructionParagraph">
+			<div>Select the sand type you want <br>from the drop down menu. <br> Click and drag to draw on screen. </div>
+		</div>
+		<span><br>By: Thomas Bouffard</span>
+	</div>
+	
+	<script src='js/utilities.js'></script>
+	<script src='js/loader.js'></script>
+	<script src='js/main.js'></script>
+</body>
+</html>
